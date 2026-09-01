@@ -1,4 +1,4 @@
-# govbr-theme-releasel-please-poc
+# govbr-theme-release-please-poc
 
 > POC para avaliação de uso do [release-please](https://github.com/googleapis/release-please-action) como gerador de versões para projeto de tema.
 
