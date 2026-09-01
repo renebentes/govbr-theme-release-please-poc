@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/renebentes/govbr-theme-release-please-poc/compare/v1.0.0...v1.1.0) (2026-09-01)
+
+
+### Features
+
+* atualize para v5 ([#7](https://github.com/renebentes/govbr-theme-release-please-poc/issues/7)) ([75d965b](https://github.com/renebentes/govbr-theme-release-please-poc/commit/75d965b919b21c856c991cdcaabbe3938cbb1e2e))
+* configure atualizações para pacotes do Node ([#5](https://github.com/renebentes/govbr-theme-release-please-poc/issues/5)) ([b896b37](https://github.com/renebentes/govbr-theme-release-please-poc/commit/b896b37f10e96c2d4c41c919fa54ee3981486c56))
+
+
+### Miscellaneous Chores
+
+* **main:** release 1.0.0 ([#6](https://github.com/renebentes/govbr-theme-release-please-poc/issues/6)) ([3b30f6c](https://github.com/renebentes/govbr-theme-release-please-poc/commit/3b30f6c3ecfcde55c5186b32ab645243cbab2215))
+
 ## 1.0.0 (2026-09-01)
 
 
