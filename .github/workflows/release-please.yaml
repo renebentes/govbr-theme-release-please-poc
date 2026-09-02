@@ -14,9 +14,14 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+    outputs:
+      pr: ${{ steps.release-please.outputs.pr }}
+      prs_created: ${{ steps.release-please.outputs.prs_created }}
+      version: ${{ steps.release-please.outputs.version }}
 
     steps:
       - uses: googleapis/release-please-action@v5
+        id: release-please
         with:
           config-file: .github/release-please/config.json
           manifest-file: .github/release-please/manifest.json
