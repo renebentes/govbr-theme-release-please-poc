@@ -7,6 +7,16 @@
       "type": "json",
       "path": "package.json",
       "jsonpath": "$.version"
+    },
+    {
+      "type": "xml",
+      "path": "govbr/templateDetails.xml",
+      "xpath": "//xpath/version"
+    },
+    {
+      "type": "json",
+      "path": "govbr/joomla.asset.json",
+      "jsonpath": "$.version"
     }
   ]
 }

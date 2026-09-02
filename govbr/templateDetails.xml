@@ -1,0 +1,8 @@
+<extension
+    type="template"
+    method="upgrade"
+    client="site">
+  <name>govbr</name>
+  <creationDate></creationDate>
+  <version>0.0.1</version>
+</extension>

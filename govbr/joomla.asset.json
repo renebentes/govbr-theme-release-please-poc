@@ -1,0 +1,5 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "govbr",
+  "version": "0.1.0"
+}
