@@ -20,6 +20,8 @@
  *
  * @copyright  (C) 2026 Rene B. Pinto <renebentes@yahoo.com.br>
  * @license    MIT; see LICENSE
+ *
+ * @since      __DEPLOY_VERSION__
  */
 
 // Functions.
@@ -154,8 +156,8 @@ $rootPath = \dirname(__DIR__);
 foreach ($coreXmlFiles as $coreXmlFile) {
     if (file_exists($rootPath . $coreXmlFile)) {
         $fileContents = file_get_contents($rootPath . $coreXmlFile);
-        $fileContents = preg_replace('#<version>[^<]*</version>#', '<version>' . $version['main'] . '.' . $version['dev_level'] . '</version>', $fileContents);
-        $fileContents = preg_replace('#<creationDate>[^<]*</creationDate>#', '<creationDate>' . $version['creation_date'] . '</creationDate>', $fileContents);
+        $fileContents = preg_replace('#<version(\s*/>|>[^<]*</version>)#', '<version>' . $version['main'] . '.' . $version['dev_level'] . '</version>', $fileContents);
+        $fileContents = preg_replace('#<creationDate(\s*/>|>[^<]*</creationDate>)#', '<creationDate>' . $version['creation_date'] . '</creationDate>', $fileContents);
         file_put_contents($rootPath . $coreXmlFile, $fileContents);
     }
 }
