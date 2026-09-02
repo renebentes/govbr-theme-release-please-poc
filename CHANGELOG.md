@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.2.0](https://github.com/renebentes/govbr-theme-release-please-poc/compare/v1.1.0...v1.2.0) (2026-09-02)
+
+
+### Features
+
+* adicione estrutura do tema ([#12](https://github.com/renebentes/govbr-theme-release-please-poc/issues/12)) ([f45ae43](https://github.com/renebentes/govbr-theme-release-please-poc/commit/f45ae43c3e52c617f7d5ffa5665e6e203d0074cb))
+
+
+### Bug Fixes
+
+* **Node:** agrupe configuração para pacote principal ([#9](https://github.com/renebentes/govbr-theme-release-please-poc/issues/9)) ([a1e26dc](https://github.com/renebentes/govbr-theme-release-please-poc/commit/a1e26dc66b015577ca5bc0ae0a6c4fb2be32e9be))
+
+
+### Reverts
+
+* fix(Node): agrupe configuração para pacote principal ([#9](https://github.com/renebentes/govbr-theme-release-please-poc/issues/9)) ([#11](https://github.com/renebentes/govbr-theme-release-please-poc/issues/11)) ([06f1054](https://github.com/renebentes/govbr-theme-release-please-poc/commit/06f1054da5c5fc314d4202e2e7b0d15b11bbf036))
+
 ## [1.1.0](https://github.com/renebentes/govbr-theme-release-please-poc/compare/v1.0.0...v1.1.0) (2026-09-01)
 
 
