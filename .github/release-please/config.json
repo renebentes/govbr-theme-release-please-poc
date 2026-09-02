@@ -11,7 +11,7 @@
     {
       "type": "xml",
       "path": "govbr/templateDetails.xml",
-      "xpath": "//xpath/version"
+      "xpath": "//xpath/extension/version"
     },
     {
       "type": "json",
