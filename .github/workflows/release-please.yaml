@@ -20,4 +20,26 @@ jobs:
         with:
           config-file: .github/release-please/config.json
           manifest-file: .github/release-please/manifest.json
-          token: ${{ secrets.GITHUB_TOKEN }}
+
+  prepare-release:
+    needs: release-please
+    if: needs.release-please.outputs.prs_created == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ fromJSON(needs.release-please.outputs.pr).headBranchName }}
+
+      - name: Bump version
+        run: |
+          php ./build/bump.php -v ${{ needs.release-please.outputs.version }}
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: bump v${{ needs.release-please.outputs.version }} on files"
