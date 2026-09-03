@@ -6,7 +6,7 @@
  * @copyright  (C) 2026 Rene B. Pinto. <renebentes@yahoo.com.br>
  * @license    MIT; see LICENSE
  *
- * @since       __DEPLOY_VERSION__
+ * @since       2.0.0
  */
 
 use GovBrTheme\Version;

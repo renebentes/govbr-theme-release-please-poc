@@ -6,14 +6,14 @@
  * @copyright  (C) 2026 Rene B. Pinto. <renebentes@yahoo.com.br>
  * @license    MIT; see LICENSE
  *
- * @since       __DEPLOY_VERSION__
+ * @since       2.0.0
  */
 
 namespace GovBrTheme
 /**
  * Version information class.
  *
- * @since  __DEPLOY_VERSION__
+ * @since  2.0.0
  */
 final class Version
 {
@@ -21,7 +21,7 @@ final class Version
      * Major release version.
      *
      * @var    integer
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const MAJOR_VERSION = 0;
 
@@ -29,7 +29,7 @@ final class Version
      * Minor release version.
      *
      * @var    integer
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const MINOR_VERSION = 0;
 
@@ -37,7 +37,7 @@ final class Version
      * Patch release version.
      *
      * @var    integer
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const PATCH_VERSION = 0;
 
@@ -48,7 +48,7 @@ final class Version
      * For example, for 1.0.0 when this is set to 'dev' the version string will be `1.0.0-dev`.
      *
      * @var    string
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const EXTRA_VERSION = '';
 
@@ -56,7 +56,7 @@ final class Version
      * Development status.
      *
      * @var    string
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const DEV_STATUS = '';
 
@@ -64,7 +64,7 @@ final class Version
      * Release date.
      *
      * @var    string
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const RELEASE_DATE = '';
 
@@ -72,7 +72,7 @@ final class Version
      * Release time.
      *
      * @var    string
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const RELEASE_TIME = '';
 
@@ -80,7 +80,7 @@ final class Version
      * Release timezone.
      *
      * @var    string
-     * @since  __DEPLOY_VERSION__
+     * @since  2.0.0
      */
     public const RELEASE_TIMEZONE = 'UTC';
 
