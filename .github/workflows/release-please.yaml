@@ -53,7 +53,10 @@ jobs:
           php ./build/bump.php -v "$VERSION"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v7
+      - name: Commit changes and update PR
+        uses: peter-evans/create-pull-request@v8
         with:
-          commit_message: "chore: bump v${{ steps.bump-version.outputs.version }} on files"
+          branch: ${{ fromJSON(needs.release-please.outputs.pr).headBranchName }}
+          commit-message: "chore: bump v${{ steps.bump-version.outputs.version }} on files"
+          title: ${{ fromJSON(needs.release-please.outputs.pr).title }}
+          body: ${{ fromJSON(needs.release-please.outputs.pr).body }}
