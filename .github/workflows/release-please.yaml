@@ -56,7 +56,9 @@ jobs:
       - name: Commit changes and update PR
         uses: peter-evans/create-pull-request@v8
         with:
+          base: main
+          body: ${{ fromJSON(needs.release-please.outputs.pr).body }}
           branch: ${{ fromJSON(needs.release-please.outputs.pr).headBranchName }}
           commit-message: "chore: bump v${{ steps.bump-version.outputs.version }} on files"
           title: ${{ fromJSON(needs.release-please.outputs.pr).title }}
-          body: ${{ fromJSON(needs.release-please.outputs.pr).body }}
+          sign-commits: true
