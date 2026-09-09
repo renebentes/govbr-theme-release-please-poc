@@ -7,7 +7,28 @@
 - [Google Release Please](https://github.com/googleapis/release-please-action)
 - [PHP](https://php.net)
 - [Composer](https://getcompposer.org)
-- [Vite](https://vite.dev)
+- [Node](https://nodejs.org)
+
+## O que esta POC é?
+
+Um modelo de uso do `release-please` em workflow de geração e publicação de releases para um projeto de tema para Joomla. O repositório está estruturado apenas para validação do ciclo descrito.
+
+### Estrutura
+
+```shell
+./
+├── .github/
+│   ├── release-please/
+│   │   ├── config.json           # configurações do release-please: php, extra-files
+│   │   ├── manifest.json         # rastreia a versão atual
+│   ├── workflows/
+│   │   ├── release-please.yaml   # executa release-please e atualiza arquivos com a versão atual
+├── build/
+│   ├── bump.php              # atualiza versão em arquivos que o release-please não consegue
+├── govbr/                    # diretório com arquivos demo
+├── composer.json             # arquivo demo para rastreio da versão
+├── package.json              # arquivo demo para rastreio da versão
+```
 
 ## Autor
 
